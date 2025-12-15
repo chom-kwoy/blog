@@ -225,7 +225,11 @@ $$
 이 $$D(s)$$는 재귀적으로 다음과 같이 계산할 수 있다.
 
 $$
-D(s) = \bigcup_{(t, s_{new}) \in G(s)} \left(\mathcal{I}(t) \Rightarrow D(s_{new})\right)
+\begin{align}
+D(s) &= \bigcup_{(t, s_{new}) \in G(s)}
+\left(\mathcal{I}(t) \Rightarrow D(s_{new})\right), \\
+D(s_{accept}) &= U.
+\end{align}
 $$
 
 따라서, 우리가 원하는 문장 번호들의 집합 $$D(s_{start})$$는 위 식을 동적 프로그래밍(Dynamic programming)으로 계산하면 얻을 수 있다.
