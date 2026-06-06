@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: 'Pretendard';
+    src: url(./fonts/PretendardVariable.woff2) format('woff2');
+}
+
+@font-face {
     font-family: 'Noto Sans CJK KR';
     src: local('Noto Sans CJK KR'),
          url(./fonts/NotoSansKR-VariableFont_wght.woff2) format('woff2');
@@ -14,7 +19,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.8 'Noto Sans CJK KR', 'NanumBarunGothic YetHangul','나눔바른고딕 옛한글', 'Source Han Sans KR','Source Han Sans K', '함초롬돋움 LVT','HCR Dotum LVT','함초롬돋움','HCR Dotum', '본고딕','본고딕 KR', 'sans-serif'; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 16px/1.8 'Pretendard', 'Noto Sans CJK KR', 'NanumBarunGothic YetHangul','나눔바른고딕 옛한글', 'Source Han Sans KR','Source Han Sans K', '함초롬돋움 LVT','HCR Dotum LVT','함초롬돋움','HCR Dotum', '본고딕','본고딕 KR', 'sans-serif'; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-top: 15px; margin-bottom: 15px; }
