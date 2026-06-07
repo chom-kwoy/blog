@@ -9,10 +9,11 @@
     src: url(./fonts/PretendardVariable.woff2) format('woff2');
 }
 
-@font-face {
+@font-face {  /* For Old Hangul */
     font-family: 'Noto Sans CJK KR';
     src: local('Noto Sans CJK KR'),
          url(./fonts/NotoSansKR-VariableFont_wght.woff2) format('woff2');
+    size-adjust: 95%;  /* Noto is a bit bigger than Pretendard */
 }
 
 /** Reset some basic elements */
