@@ -2,7 +2,7 @@
 layout: post
 title:  "고양이는 왜 털이 무한정 자라지 않을까?"
 date:   2024-05-08 21:30:00 +0900
-categories: jekyll update
+categories: math
 ---
 
 인간은 정기적으로 미용실에 가서 머리카락을 자른다. 자르지 않으면 아래 그림의 라푼젤과 같이 무한정 길어질 것이기 때문이다.

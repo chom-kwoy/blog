@@ -2,7 +2,7 @@
 layout: post
 title:  "중세국어 감동법의 흔적: “할쏘냐, ~일세, ~이올시다, 글쎄”"
 date:   2024-04-07 01:33:45 +0900
-categories: jekyll update
+categories: linguistics
 ---
 
 나의 궁금증은 다음과 같은 물음에서 시작되었다.

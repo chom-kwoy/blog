@@ -2,7 +2,7 @@
 layout: post
 title:  "미국이 그린란드를 노리는 진짜 이유"
 date:   2026-01-20 14:26:00 +0900
-categories: jekyll update
+categories: politics
 ---
 
 트럼프는 집권 2기에 들어 무력을 사용해서라도 그린란드를 미국 영토에 편입하겠다는 야욕을 노골적으로 드러내고 있다.

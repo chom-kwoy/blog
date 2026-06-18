@@ -2,7 +2,7 @@
 layout: post
 title:  "중세 한국어 음절말 'ㅈ, ㅊ > ㅅ' 중화에 관하여"
 date:   2026-06-08 21:30:00 +0900
-categories: jekyll update
+categories: linguistics
 ---
 
 [지난번 글](/jekyll/update/2026/05/21/middle-korean-coda-s.html)에서는 중세 한국어 음절말 'ㅅ'의 실현이 16세기 말까지 \[s]로 실현되었음을 주장하고 논증하였다.

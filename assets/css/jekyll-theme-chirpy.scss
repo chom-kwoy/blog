@@ -55,3 +55,21 @@ h5,
 h6 {
   font-family: $korean-stack;
 }
+
+/* ----------------------------------------------------------------------------
+ * Remove Chirpy's faux "application window" chrome on code blocks: hide the
+ * header bar (macOS traffic-light dots, language label, copy button) and
+ * restore the rounded top corners that the header would otherwise cover.
+ * ------------------------------------------------------------------------- */
+.code-header {
+  display: none;
+}
+
+div[class^='language-'] .highlight {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+
+  /* The top padding used to be supplied by the (now hidden) header bar;
+   * add it back so top/bottom padding match (theme sets padding-bottom only). */
+  padding-top: 0.75rem;
+}

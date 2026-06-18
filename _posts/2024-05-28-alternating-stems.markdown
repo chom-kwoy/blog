@@ -2,7 +2,7 @@
 layout: post
 title:  "중세국어 이전의 음운 변화 (1) - 특수어간교체를 중심으로"
 date:   2024-05-28 17:01:00 +0900
-categories: jekyll update
+categories: linguistics
 --- 
 
 ## 므~ㅁㄱ 특수 교체
