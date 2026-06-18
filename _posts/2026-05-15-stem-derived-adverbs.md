@@ -3,6 +3,8 @@ layout: post
 title:  "소위 어간형 부사 '니르'에 관하여"
 date:   2026-05-15 15:45:00 +0900
 categories: linguistics
+redirect_from:
+  - /jekyll/update/2026/05/15/stem-derived-adverbs.html
 ---
 
 중세 한국어에는 용언 어간과 동일한 형태의 부사들, 소위 '어간형 부사'들이 존재한다. 용언 '너므-'(넘기다)와 관련되는 부사 '너므', 용언 '그르-'와 관련되는 부사 '그르' 등이 그것이다.

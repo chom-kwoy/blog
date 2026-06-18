@@ -6,6 +6,14 @@ source "https://rubygems.org"
 # Pages builder, so any theme/Jekyll version is fine.
 gem "jekyll-theme-chirpy", "~> 7.2"
 
+# Plugins not bundled with the theme. Gems in the :jekyll_plugins group are
+# auto-loaded by Jekyll (no need to also list them under `plugins:` in config).
+group :jekyll_plugins do
+  # Generates redirect pages for old post URLs (see `redirect_from:` in posts
+  # whose category — and therefore permalink — changed).
+  gem "jekyll-redirect-from"
+end
+
 group :test do
   gem "html-proofer", "~> 5.0"
 end

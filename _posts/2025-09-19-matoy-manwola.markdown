@@ -3,6 +3,8 @@ layout: post
 title:  "'마ᄃᆡ'와 '마노라'의 어원 생각"
 date:   2025-09-19 20:56:00 +0900
 categories: linguistics
+redirect_from:
+  - /jekyll/update/2025/09/19/matoy-manwola.html
 ---
 
 어느 날, <훈몽자회> (1527)의 다음 자석에 눈길이 가게 되었다.
