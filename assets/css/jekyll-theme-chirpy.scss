@@ -1,0 +1,57 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ----------------------------------------------------------------------------
+ * Custom fonts for Korean / Old Hangul / Gugyeol (구결).
+ * Carried over from the previous minima theme. The 'Gugyeol' face is scoped to
+ * the PUA range and is placed first in the font stack so PUA glyphs use it.
+ * ------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Gugyeol';
+  src: url('/assets/fonts/NewGulim.woff2') format('woff2');
+  unicode-range: U+E000-F8FF; /* PUA */
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/PretendardVariable.woff2') format('woff2');
+  font-feature-settings: 'clig' 0;
+}
+
+@font-face {
+  /* For Old Hangul */
+  font-family: 'Noto Sans CJK KR';
+  src:
+    local('Noto Sans CJK KR'),
+    url('/assets/fonts/NotoSansKR-VariableFont_wght.woff2') format('woff2');
+  size-adjust: 95%; /* Noto is a bit bigger than Pretendard */
+}
+
+$korean-stack: 'Gugyeol', 'Pretendard', 'Noto Sans CJK KR',
+  'NanumBarunGothic YetHangul', '나눔바른고딕 옛한글', 'Source Han Sans KR',
+  'Source Han Sans K', '함초롬돋움 LVT', 'HCR Dotum LVT', '함초롬돋움', 'HCR Dotum',
+  '본고딕', '본고딕 KR', sans-serif;
+
+/* Apply the Korean stack to body text and headings (Chirpy's defaults are
+ * Source Sans Pro / Lato, which don't render Old Hangul or Gugyeol). */
+body {
+  font-family: $korean-stack;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $korean-stack;
+}

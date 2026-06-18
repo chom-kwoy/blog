@@ -1,43 +1,117 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+theme: jekyll-theme-chirpy
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-lang: ko
+# Language code; ko-KR matches the Korean locale shipped with the theme
+# (_data/locales/ko-KR.yml).
+lang: ko-KR
+
+timezone: Asia/Seoul
+
+# ----------------------------------------------------------------------------
+# Site identity
+# ----------------------------------------------------------------------------
 title: ᄎᆞᆷ괴로운 블로그
-email: chom.kwoy@됬.xyz
-description: >- # this means to ignore newlines until "baseurl:"
-    ᄎᆞᆷ괴로운 언어학 관련 얘기하는 곳
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
+tagline: ᄎᆞᆷ괴로운 언어학 관련 얘기하는 곳
+description: >-
+  ᄎᆞᆷ괴로운 언어학 관련 얘기하는 곳
 
-# Build settings
+# The base hostname & protocol, e.g. "https://example.com". Leave empty for
+# local preview.
+url: ""
+baseurl: ""
+
+github:
+  username: mujjingun
+
+social:
+  name: ᄎᆞᆷ괴
+  email: mujjingun@gmail.com
+  links:
+    - https://github.com/mujjingun
+
+# [light | dark | empty] — empty means follow the system / show a toggle.
+theme_mode:
+
+# Table of contents in the right sidebar of posts.
+toc: true
+
+comments:
+  provider: # [disqus | utterances | giscus]
+
+paginate: 10
+
+# Publish posts with a future date (matches the previous `jekyll build --future`).
+future: true
+
+# ----------------------------------------------------------------------------
+# The options below are part of Chirpy's expected configuration and are
+# generally not modified.
+# ----------------------------------------------------------------------------
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+
 kramdown:
-    smart_quotes: ["apos", "apos", "quot", "quot"]
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      math: true
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+  - _backup_minima

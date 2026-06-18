@@ -36,7 +36,7 @@ $$
 
 나는 우선 $$p=0.1\%, r=1$$으로 놓고 시뮬레이션을 1000번 돌려보았다. 털의 길이의 기댓값은 시간이 지날수록 특정 값으로 수렴하는 것을 볼 수 있다.
 <p align="center" width="100%">
-    <img width="80%" src="/assets/mean_length.png">
+    <img width="80%" src="/assets/mean_length.png" alt="털 길이 기댓값의 시뮬레이션 결과 그래프">
 </p>
 
 그렇다면 정확히 어떤 값에 수렴할까? 그건 $$\lim_{i \rightarrow \infty} \mathbb{E}\left[ {\boldsymbol l}_{i} \right]$$의 극한을 계산해 보면 알 수 있다.
