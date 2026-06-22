@@ -73,3 +73,11 @@ div[class^='language-'] .highlight {
    * add it back so top/bottom padding match (theme sets padding-bottom only). */
   padding-top: 0.75rem;
 }
+
+a.img-link {
+  display: inline-block !important;
+  position: unset !important;
+  left: unset !important;
+  transform: unset !important;
+}
+
