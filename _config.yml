@@ -70,7 +70,8 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-  smart_quotes: ["apos", "apos", "quot", "quot"]
+  # Use code points for 〈 and 〉: kramdown 2.4.0 swaps the lang/rang entity names.
+  smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
 
 collections:
   tabs:
