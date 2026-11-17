@@ -24,9 +24,9 @@ tagline: ᄎᆞᆷ괴로운 언어학 관련 얘기하는 곳
 description: >-
   ᄎᆞᆷ괴로운 언어학 관련 얘기하는 곳
 
-# The base hostname & protocol, e.g. "https://example.com". Leave empty for
-# local preview.
-url: ""
+# Production hostname & protocol (matches CNAME). Used for absolute sitemap
+# and canonical URLs; `jekyll serve` overrides it for local preview.
+url: "https://blog.xn--gt1b.xyz"
 baseurl: ""
 
 github:
